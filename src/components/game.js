@@ -35,7 +35,7 @@ export default class Game extends React.Component {
         const difference = Math.abs(guess - this.state.correctAnswer);
 
         let feedback;
-        if (difference >= 50) {
+        if (difference >= 40) {
             feedback = 'You\'re Ice Cold...';
         }
         else if (difference >= 30) {
