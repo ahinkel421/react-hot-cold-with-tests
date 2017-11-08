@@ -48,7 +48,7 @@ export default class Game extends React.Component {
             feedback = 'You\'re Hot!';
         }
         else {
-            feedback = 'You got it!';
+            feedback = 'You got it!'; 
         }
 
         this.setState({
