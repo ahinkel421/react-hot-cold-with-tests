@@ -8,6 +8,11 @@ describe('<InfoModal />', () => {
 		shallow(<InfoModal />);
 	});
 	it('Closes modal when user clicks "got it"', () => {
-		
+		const callback = jest.fn();
+		const wrapper = shallow(<InfoModal onClose={callback} />);
+		wrapper.find('.close').simulate('click', {
+			preventDefault() {}
+		});
+		expect(callback).toHaveBeenCalled();
 	});
 });

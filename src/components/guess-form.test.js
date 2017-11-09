@@ -10,7 +10,7 @@ describe('<GuessForm />', () => {
 	it('Should run onGuess when the submit button is clicked', () => {
 		const callback = jest.fn();
 		const wrapper = mount(<GuessForm onGuess={callback} />);
-		const value = 'Foobar';
+		const value = 'foobar';
 		wrapper.find('input[type="text"]').instance().value = value;
 		wrapper.simulate('submit');
 		expect(callback).toHaveBeenCalledWith(value);
