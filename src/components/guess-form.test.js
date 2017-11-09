@@ -7,4 +7,5 @@ describe('<GuessForm />', () => {
 	it('Renders without crashing', () => {
 		shallow(<GuessForm />);
 	});
+	//it should render the form and receive the value of the input when the user clicks submit.
 });

@@ -7,4 +7,5 @@ describe('<TopNav />', () => {
 	it('Renders without crashing', () => {
 		shallow(<TopNav />);
 	});
+	//Render the navbar and if the user clicks new game or "what," run the callback function passed in props
 });
