@@ -7,5 +7,8 @@ describe('<GuessForm />', () => {
 	it('Renders without crashing', () => {
 		shallow(<GuessForm />);
 	});
+	it('Should run onGuess when the submit button is clicked', => {
+		
+	})
 	//it should render the form and receive the value of the input when the user clicks submit.
 });
