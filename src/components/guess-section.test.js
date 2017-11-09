@@ -7,9 +7,9 @@ describe('<GuessSection />', () => {
 	it('Renders without crashing', () => {
 		shallow(<GuessSection />);
 	});
-	// it('Should render the correct feedback', () => {
-	// 	const feedback = 'foo';
-	// 	const wrapper = shallow(<GuessSection feedback={feedback} />);
-	// 	expect(wrapper.containts('foo')).toEqual(true);
-	// });
+	it('Should render the correct feedback', () => {
+		const feedback = 'foo';
+		const wrapper = shallow(<GuessSection feedback={feedback} />);
+		expect(wrapper.contains('foo')).toEqual(true);
+	});
 });
