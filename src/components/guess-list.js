@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './guess-list.css';
 
@@ -15,3 +16,7 @@ export default function GuessList(props) {
         </ul>
     );
 };
+
+GuessList.propTypes = {
+    guesses: PropTypes.array.isRequired
+}
