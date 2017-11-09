@@ -7,8 +7,7 @@ describe('<InfoModal />', () => {
 	it('Renders without crashing', () => {
 		shallow(<InfoModal />);
 	});
-	it('Closes modal when user clicks "got it"', => {
-		
-	});
-	//it should render the info modal and close the info modal when the "got it" button is clicked.
+	// it('Closes modal when user clicks "got it"', () => {
+
+	// });
 });
